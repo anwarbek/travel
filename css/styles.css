@@ -10,15 +10,86 @@ body {
   font-size: 18px;
   line-height: 21.6px;
   letter-spacing: 2px;
-  background-color: #fefefe;
   color: #222;
+  background-color: #fefefe;
 }
 
 /* Container */
 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  min-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1240px;
+  padding: 0px 20px;
   margin: 0 auto;
+}
+
+
+.hero {
+  width: 600px;
+  height: 782px;
+  background-image: url(../img/travel-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .hero {
+    background-image: url(../img/travel-bg@2x.jpg);
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  margin: 326px auto;
+}
+
+.hero-text {
+  font-size: 24px;
+  line-height: 28.8px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.top-blogs-button {
+  width: 164px;
+  background-color: #1E90FF;
+  color: #fff;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.top-blogs-button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 23px;
+}
+
+.top-blogs-button-icon {
+  width: 20px;
+  height: 19px;
+  margin-right: 12px;
+}
+
+.top-blogs-button-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
 }
